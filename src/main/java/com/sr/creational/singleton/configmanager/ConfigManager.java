@@ -2,7 +2,7 @@ package com.sr.creational.singleton.configmanager;
 import java.util.Properties;
 
     public class ConfigManager {
-        private Properties configProperties;
+        private final Properties configProperties;
         public ConfigManager() {
             configProperties = new Properties();
             loadDefaultConfig();

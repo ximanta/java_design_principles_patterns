@@ -7,5 +7,5 @@ public interface Remotable {
         void volumeDown();
         void changeChannel(int channel);
         void setTemperature(int temperature);
-    }
+}
 

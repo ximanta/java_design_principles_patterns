@@ -9,10 +9,10 @@ import com.sr.creational.facorymethod.product.Notification;
  */
 public abstract class NotificationFactory {
 
-        public Notification createNotification() {
-                Notification notification = create();
-                notification.compose();
-                return notification;
-        }
-        protected abstract Notification create();//Factory Method
+public Notification createNotification() {
+        Notification notification = create();
+        notification.compose();
+        return notification;
+}
+protected abstract Notification create();//Factory Method
 }

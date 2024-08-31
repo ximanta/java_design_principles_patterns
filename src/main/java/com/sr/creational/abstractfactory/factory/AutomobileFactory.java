@@ -7,5 +7,4 @@ public interface AutomobileFactory {
     Automobile createSedan();
     Automobile createSUV();
 
-
 }

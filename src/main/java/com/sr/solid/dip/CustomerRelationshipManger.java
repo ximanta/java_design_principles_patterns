@@ -1,12 +1,12 @@
 package com.sr.solid.dip;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class CustomerRelationshipManger {
-    private HealthInsuranceSuveyor healthInsuranceSuveyor;
-    private EmailNotifier emailNotifier;
-    public CustomerRelationshipManger(HealthInsuranceSuveyor healthInsuranceSuveyor, EmailNotifier emailNotifier){
-        this.healthInsuranceSuveyor = healthInsuranceSuveyor;
-        this.emailNotifier = emailNotifier;
-    }
+    private final HealthInsuranceSuveyor healthInsuranceSuveyor;
+    private final EmailNotifier emailNotifier;
+
     public boolean isClaimApproved(Customer customer){
         boolean status=healthInsuranceSuveyor.isClaimSurveyApproved(customer);
         if(status){
