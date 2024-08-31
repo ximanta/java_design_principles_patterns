@@ -1,12 +1,10 @@
 package com.sr.creational.singleton.configmanager.solution;
 
-import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class SingletonConfigManager {
     private static volatile SingletonConfigManager instance;
-    private Properties configProperties;
+    private final Properties configProperties;
 
     private SingletonConfigManager() {
         if (instance != null) {

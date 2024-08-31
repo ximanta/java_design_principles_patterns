@@ -5,7 +5,7 @@ import com.sr.creational.builder.builder.TransactionBuilder;
 
 public class TransactionDirector {
 
-        private TransactionBuilder builder;
+        private final TransactionBuilder builder;
 
         public TransactionDirector(TransactionBuilder builder) {
             this.builder = builder;

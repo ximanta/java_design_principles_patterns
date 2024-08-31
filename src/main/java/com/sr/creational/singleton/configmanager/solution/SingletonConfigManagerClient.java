@@ -1,7 +1,5 @@
 package com.sr.creational.singleton.configmanager.solution;
 
-import java.lang.reflect.Constructor;
-
 public class SingletonConfigManagerClient {
 
     public static void main(String[] args) throws Exception {
