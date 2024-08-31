@@ -7,5 +7,5 @@ public class HealthInsuranceSuveyor{
              return false;
          }
          return true;
-         }
-    }
+     }
+}

@@ -7,8 +7,7 @@ public class PaymentTransactionBuilder implements TransactionBuilder {
     protected double amount;
     protected String paymentMethod;
     protected double transactionFee;
-
-    protected String transactionDescritpion;
+    protected String transactionDescription;
 
     public PaymentTransactionBuilder(String payerAccount, String recipientAccount) {
         this.payerAccount = payerAccount;
@@ -40,7 +39,7 @@ public class PaymentTransactionBuilder implements TransactionBuilder {
     }
     @Override
     public TransactionBuilder withDescription(String description) {
-        this.transactionDescritpion = description;
+        this.transactionDescription = description;
         return this;
     }
     @Override

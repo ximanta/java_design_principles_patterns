@@ -1,10 +1,10 @@
 package com.sr.solid.ocp;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class CustomerRelationshipManger {
-    private HealthInsuranceSuveyor healthInsuranceSuveyor;
-    public CustomerRelationshipManger(HealthInsuranceSuveyor healthInsuranceSuveyor){
-        this.healthInsuranceSuveyor = healthInsuranceSuveyor;
-    }
+    private final HealthInsuranceSuveyor healthInsuranceSuveyor;
     public boolean isClaimApproved(Customer customer){
         if(healthInsuranceSuveyor.isClaimSurveyApproved(customer)){
             return true;

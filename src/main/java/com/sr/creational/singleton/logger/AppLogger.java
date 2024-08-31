@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AppLogger {
-    private List<String> logs;
+    private final List<String> logs;
     // Public constructor allows multiple instances
     public AppLogger() {
         logs = new ArrayList<>();

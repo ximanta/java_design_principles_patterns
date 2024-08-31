@@ -1,23 +1,12 @@
 package com.sr.solid.dip;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
 public class Customer {
-    private String name;
-    private int age;
-    private Claim claim;
-
-    public Customer(String name, int age, Claim claim) {
-        this.name = name;
-        this.age = age;
-        this.claim = claim;
-    }
-    public String getName() {
-        return name;
-    }
-     public int getAge() {
-        return age;
-    }
-    public Claim getClaim() {
-        return claim;
-    }
-
+    private final String name;
+    private final int age;
+    private final Claim claim;
 }

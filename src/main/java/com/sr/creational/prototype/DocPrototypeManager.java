@@ -24,7 +24,6 @@ public class DocPrototypeManager {
         for (Map.Entry<String, Document> entry : documentMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue().toString());
         }
-
-       }
-    }
+   }
+}
 

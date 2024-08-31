@@ -5,6 +5,4 @@ public class AppNotification extends Notification {
     public void compose() {
         System.out.println("Composing notification for App.");
     }
-
-
 }
